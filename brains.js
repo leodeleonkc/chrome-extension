@@ -9,6 +9,8 @@ const resizeOps = () => {
 resizeOps();
 window.addEventListener("resize", resizeOps);
 
+// Render Current Time
+
 function getCurrentTime() {
   const date = new Date();
   document.getElementById("time").textContent = date.toLocaleTimeString(
@@ -36,9 +38,7 @@ navigator.geolocation.getCurrentPosition((position) => {
       document.getElementById("weather-info").innerHTML = `
       <img src="${iconUrl}" alt="" class="Weather Icon" width="60" height="60" />
       <h2 class="temp">${Math.round(data.main.temp)}°</h2>
-
-
-            `;
+      `;
     })
     .catch((err) => console.error(err));
 });
