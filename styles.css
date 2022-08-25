@@ -76,7 +76,7 @@ h2 {
   color: var(--Green);
   border-radius: 2rem;
   border: 1px solid var(--Green);
-  background-image: url("images/search.svg");
+  background-image: url("https://www.leodeleon.co/chrome-extension/images/search.svg");
   background-repeat: no-repeat;
   background-position: 3% center;
 }
